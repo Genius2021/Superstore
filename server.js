@@ -21,6 +21,10 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use("/api/payPlatform", payPlatformRoutes);
 
+if (process.env.NODE_ENV === "production"){
+    app.use(express.static("frontend/build"));
+}
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {

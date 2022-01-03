@@ -3,7 +3,6 @@ import { CLEAR__MESSAGE, MESSAGE__ERROR, MESSAGE__SUCCESS, MESSAGE__WARNING } fr
 
 export const messageSuccess = (message) => (dispatch, getState) => {
         dispatch({ type: MESSAGE__SUCCESS, payload: message })
-      
 
 }
 

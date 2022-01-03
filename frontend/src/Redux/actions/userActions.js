@@ -1,11 +1,11 @@
-import axios from "axios";
+import axiosInstance from "axiosInstance";
 import { MESSAGE__ERROR, MESSAGE__SUCCESS } from "../constants/generalConstants";
 import { USER_DETAILS_FAIL, USER_DETAILS_REQUEST, USER_DETAILS_SUCCESS, USER_PHOTO_UPDATE_FAIL, USER_PHOTO_UPDATE_REQUEST, USER_PHOTO_UPDATE_SUCCESS, USER_PHOTO_UPLOAD_FAIL, USER_PHOTO_UPLOAD_REQUEST, USER_PHOTO_UPLOAD_SUCCESS, USER_REGISTER_FAIL, USER_REGISTER_REQUEST, USER_REGISTER_SUCCESS, USER_SIGNIN_FAIL, USER_SIGNIN_REQUEST, USER_SIGNIN_SUCCESS, USER_SIGNOUT, USER_UPDATE_PROFILE_FAIL, USER_UPDATE_PROFILE_REQUEST, USER_UPDATE_PROFILE_SUCCESS } from "../constants/userConstants"
 
 export const signin = (email, password) => async (dispatch) => {
     dispatch({ type: USER_SIGNIN_REQUEST, payload: { email, password } });
     try {
-        const { data } = await axios.post("/api/users/signin", { email, password });
+        const { data } = await axiosInstance.post("/api/users/signin", { email, password });
         
         if(data._id){
         const { message, ...rest } = data
@@ -29,7 +29,7 @@ export const signin = (email, password) => async (dispatch) => {
 export const register = (firstName, lastName, username, email, picture, mobileNumber, password) => async (dispatch) => {
     dispatch({ type: USER_REGISTER_REQUEST });
     try {
-        const { data } = await axios.post("/api/users/register", { firstName, lastName, username, email, picture, mobileNumber, password });
+        const { data } = await axiosInstance.post("/api/users/register", { firstName, lastName, username, email, picture, mobileNumber, password });
         
         if(data._id){
             const { message, ...rest } = data
@@ -61,7 +61,7 @@ export const detailsUser = (userId) => async (dispatch, getState) => {
     const { userSignin: { userInfo } } = getState();
 
     try {
-        const { data } = await axios.get(`/api/users/${userId}`, {
+        const { data } = await axiosInstance.get(`/api/users/${userId}`, {
             headers: {
                 "authorization": `Bearer ${userInfo.token}`
             }
@@ -83,7 +83,7 @@ export const updateProfile = (user) => async (dispatch, getState) =>{
     dispatch({type: USER_UPDATE_PROFILE_REQUEST, payload: user});
     const { userSignin: {userInfo}} = getState();
     try {
-        const { data } = await axios.put("/api/users/profile", user, {
+        const { data } = await axiosInstance.put("/api/users/profile", user, {
             headers: {
                 "authorization": `Bearer ${userInfo.token}`
             }
@@ -113,7 +113,7 @@ export const updateProfile = (user) => async (dispatch, getState) =>{
 export const photoUpdate = (file) => async (dispatch) => {
     dispatch({ type: USER_PHOTO_UPDATE_REQUEST, payload: { file } });
     try {
-        const { data } = await axios.post("/api/upload", file);
+        const { data } = await axiosInstance.post("/api/upload", file);
         dispatch({ type: USER_PHOTO_UPDATE_SUCCESS, payload: data });
         console.log("success in updating image file")
     } catch (error) {
@@ -127,7 +127,7 @@ export const photoUpdate = (file) => async (dispatch) => {
 export const photoUpload = (file) => async (dispatch) => {
     dispatch({ type: USER_PHOTO_UPLOAD_REQUEST, payload: { file } });
     try {
-        const { data } = await axios.post("/api/upload", file);
+        const { data } = await axiosInstance.post("/api/upload", file);
         dispatch({ type: USER_PHOTO_UPLOAD_SUCCESS, payload: data });
         console.log("success in uploading image file")
     } catch (error) {
