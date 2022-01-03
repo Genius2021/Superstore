@@ -1,0 +1,64 @@
+
+.page__title{
+    margin: 0 auto;
+    color: rgb(88, 85, 85);
+}
+
+.shippingInfo__form{
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+
+  .login__picture{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: inline-block;
+      margin-left: 1rem;
+      border: 1px solid gray;
+  }
+  
+  .shippingInfo__form > div{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  
+  .shippingInfo__form label{
+    margin-bottom: 0;
+    margin-top: 1rem;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+
+  .shippingInfo__form input{
+      outline: none;
+      border: 1px solid gray;
+      padding: 5px;
+  }
+
+  .fullname__container{
+      display: flex;
+      flex-direction: row !important;
+      justify-content: space-between;
+  }
+
+.shippingInfo__button{
+    background-color: #3b5998;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.shippingInfo__button:hover{
+    background-color: white;
+    color: #3b5998;
+    border: 1px solid #3b5998;
+}

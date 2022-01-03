@@ -1,0 +1,88 @@
+.back_to_result{
+    color: #3b5998;
+    font-size: 1.5rem;
+}
+
+.price__container{
+    display: flex;
+    align-items: center;
+}
+
+.the__price{
+    font-size: 1.5rem;
+    color: #3b5998;
+    font-family: "Roboto";
+    margin: 2px;
+    /* font-style: italic; */
+}
+
+.singleProductImage{
+    max-width: 40rem;
+    min-height: 350px;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.box__2{
+    border: 0.1rem #c0c0c0 solid;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    max-width: 30rem;
+}
+
+.box__3{
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    max-width: 16rem;
+}
+
+div.card.card-body{
+    border: none;
+}
+
+select{
+    padding: 0.16rem 0.16rem;
+    outline: none;
+}
+
+
+ul{
+    padding-left:0;
+    padding: 0 5px;
+}
+
+.row.lastbox{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.row.lastbox:last-child{
+    margin-bottom: 2rem;
+}
+
+.addToCart__button{
+    padding: 0.95rem 0.95rem;
+    background-color: #3b5998;
+    color: white;
+    border: 1px solid #3b5998;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addToCart__button:hover{
+    border: 1px solid #000;
+}
+
+.success{
+    color:green;
+}
+
+.danger{
+    color: red;
+}

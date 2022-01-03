@@ -1,0 +1,39 @@
+.paymentMethod{
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+
+  .payment__container{
+    margin-bottom: 1.5rem;
+  }
+
+  .paymentMethod label{
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+
+  .paymentMethod input{
+      outline: none;
+      border: 1px solid gray;
+      padding: 5px;
+  }
+
+.paymentMethod__button{
+    background-color: #3b5998;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.paymentMethod__button:hover{
+    background-color: white;
+    color: #3b5998;
+    border: 1px solid #3b5998;
+}

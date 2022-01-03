@@ -1,0 +1,42 @@
+.card__big{
+    border: 0.1rem #c0c0c0 solid;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card__small.paypal{
+    border: 0.1rem #c0c0c0 solid;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 100%;
+    max-width: 30rem;
+}
+
+
+.row.smallCard{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.row.smallCard:last-child{
+    margin-bottom: 2rem;
+}
+
+img.small{
+    max-width: 5rem;
+    width: 100%;
+    border-radius:0.5rem;
+  }

@@ -1,0 +1,82 @@
+
+.page__title{
+    margin: 0 auto;
+    color: rgb(88, 85, 85);
+}
+
+.input__container{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input__container > input{
+    width: 100%;
+    padding-right: 40px;
+}
+
+.fa-eye, .fa-eye-slash{
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(88, 85, 85);
+}
+
+.form{
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+  
+  .form.login > div{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  
+  .form label{
+    margin-bottom: 0;
+    margin-top: 1rem;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+
+  .form input{
+      outline: none;
+      border: 1px solid gray;
+      padding: 5px;
+  }
+
+  .fa-user-circle-o{
+      font-size: 2rem;
+      color: rgb(88, 85, 85);
+      display: inline-block;
+  }
+
+  .fa-user-circle-o:hover{
+    color: #000;
+    cursor: pointer;
+  }
+
+.login__button{
+    background-color: #3b5998;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.login__button:hover{
+    background-color: white;
+    color: #3b5998;
+    border: 1px solid #3b5998;
+}
+
+a.register{
+    color: #3b5998;
+}

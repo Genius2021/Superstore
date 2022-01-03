@@ -1,0 +1,146 @@
+.page__name{
+    justify-self: self-start;
+    color: rgb(88, 85, 85);
+}
+
+.form{
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+.form.profile{
+    width: 100%;
+}
+
+div.form__child{
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.box__3.profile{
+    border: 0.1rem #c0c0c0 solid;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    max-width: 45rem;
+    cursor: pointer;
+    width: 100%;
+    background:linear-gradient(to right, #f8f8f8 30%, rgba(145, 142, 142, 0.9));
+}
+
+.box__3.profile:hover{
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+}
+
+.the__title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(88, 85, 85);
+}
+
+.pic__container{
+    display: flex;
+    align-items: center;
+}
+
+.pic__icon{
+    margin-left: 1rem;
+    font-size: 3rem;
+}
+
+.profile__image{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+display: inline-block;
+margin-left: 1rem;
+border: 1px solid gray;
+cursor:default;
+}
+
+
+.sub__container.displayNone{
+    position: absolute;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 800ms, visibility 800ms linear;
+}
+
+
+.sub__container{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    animation: fade 900ms;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* .sub__container.displayNone{
+    display: none;
+    
+} */
+
+.data__input{
+    width: 80%;
+    justify-self: center;
+}
+
+
+.data__input > input, .input__container > input{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.data__input > input{
+    padding: 5px;
+}
+
+ .sub__container > button{
+    width: 30%;
+    display: block;
+    padding: 5px;
+    background-color: #3b5998;
+    color: white;
+    border: 1px solid #3b5998;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem 5rem 1rem auto;
+}
+
+.sub__container > button:hover{
+    border: 1px solid #000;
+}
+
+
+.input__container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 25rem;
+}
+
+.input__container > input{
+    width: 100%;
+}
+
+.fa-eye, .fa-eye-slash{
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(88, 85, 85);
+}
+
+
+

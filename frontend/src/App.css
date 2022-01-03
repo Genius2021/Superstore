@@ -1,0 +1,77 @@
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.fa-star-half-o, .fa-star-o, .fa-star {
+    color: #ffd700;
+}
+
+html{
+    font-size: 62.5%; 
+    /* 16px * 62.5 = 10px =1rem */
+    /* box-sizing: border-box; */
+}
+
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.app{
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "main"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 3rem 1fr 5rem;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: white;
+
+}
+
+main{
+    grid-area: main;
+
+}
+
+footer{
+    grid-area: footer;
+    align-self: flex-end;
+    text-align: center;
+}
+/* 
+@media only screen and (max-width: 768px) {
+    
+    .app{
+        display: grid;
+        grid-template-areas: 
+            "nav"
+        
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 3rem 1fr 5rem;
+    }
+  
+  } */
