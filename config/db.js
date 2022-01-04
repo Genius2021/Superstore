@@ -9,7 +9,7 @@ const connectDB = async () =>{
         // }, () =>{console.log("MongoDB connection success")});
     
        await mongoose
-        .connect(process.env.MONGODB_URL || "mongodb://localhost:27017/shop", 
+        .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/shop", 
         {  useUnifiedTopology: true })
         .then(() => console.log( 'Database Connected' ))
         .catch(err => console.log( err ));
