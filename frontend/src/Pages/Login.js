@@ -42,7 +42,9 @@ function Login(props) {
         }
         
         if(redirect){
-            props.history.push(redirect);
+            if(userInfo){
+                props.history.push(redirect);
+            }
         }
 
     }, [props.history,redirect,userInfo,])
