@@ -1,5 +1,5 @@
 import { PRODUCTS_GET_FAIL, PRODUCTS_GET_REQUEST, PRODUCTS_GET_SUCCESS, PRODUCT_DETAILS_FAIL, PRODUCT_DETAILS_REQUEST, PRODUCT_DETAILS_SUCCESS } from "../constants/productConstants";
-import axiosInstance from "axiosInstance";
+import { axiosInstance } from "../../config.js";
 
 
 export const getAllProducts = () => async (dispatch) => {

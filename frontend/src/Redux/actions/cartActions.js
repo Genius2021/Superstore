@@ -1,4 +1,4 @@
-import axiosInstance from "axiosInstance";
+import { axiosInstance } from "../../config.js";
 import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_SAVE_PAYMENT_METHOD, CART_SAVE_SHIPPING_INFO } from "../constants/cartConstants";
 
 export const addToCart = (productId, qty) => async (dispatch, getState) => {

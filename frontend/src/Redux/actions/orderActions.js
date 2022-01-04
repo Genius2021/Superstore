@@ -1,6 +1,5 @@
 import { ORDER_CREATE_FAIL, ORDER_CREATE_REQUEST, ORDER_CREATE_SUCCESS, ORDER_DETAILS_FAIL, ORDER_DETAILS_REQUEST, ORDER_DETAILS_SUCCESS, ORDER_MINE_LIST_FAIL, ORDER_MINE_LIST_REQUEST, ORDER_MINE_LIST_SUCCESS, ORDER_PAY_FAIL, ORDER_PAY_REQUEST, ORDER_PAY_SUCCESS } from "../constants/orderConstants.js";
-// import { axiosInstanceInstance } from "../config.js";
-import axiosInstance from "axiosInstance";
+import { axiosInstance } from "../../config.js";
 import { CART_EMPTY } from "../constants/cartConstants.js";
 
 export const createOrder = (order) => async (dispatch, getState) => {
