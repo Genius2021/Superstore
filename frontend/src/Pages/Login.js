@@ -75,13 +75,13 @@ function Login(props) {
                 </div>
                 <div>
                     <label />
-                    <button className="login__button" disabled={loading} type="submit">Register</button>
+                    <button className="login__button" disabled={loading} type="submit">Sign In</button>
                 </div>
                 <div>
                     <label />
                     <div>
                         Don't Have An Account? {" "}
-                        <Link to={`/register?redirect=${redirect}`} className="register">Sign In</Link>
+                        <Link to={`/register?redirect=${redirect}`} className="register">Register</Link>
                     </div>
                 </div>
             </form>
