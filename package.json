@@ -8,6 +8,9 @@
     "heroku-postbuild" : "cd frontend && npm install && npm run build"
   },
   "author": "Emmanuel Onwuka",
+  "engines":{
+    "node": "16.13.0"
+  },
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
