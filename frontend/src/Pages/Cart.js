@@ -30,12 +30,8 @@ function Cart(props) {
 
 
 const checkoutHandler = () =>{
-    if(!userInfo){
         props.history.push("/signin?redirect=shipping");
-    }else{
-        props.history.push("/shipping");
     }
-}
 
     return (
         <div className="row top">

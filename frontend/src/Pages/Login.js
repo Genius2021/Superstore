@@ -39,7 +39,6 @@ function Login(props) {
     useEffect(() => {
         if (userInfo) {
             props.history.push("/");
-
         }
         
         if(redirect){
